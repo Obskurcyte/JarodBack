@@ -1,12 +1,11 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import nodemailer from 'nodemailer';
-import cors from 'cors'
-
+import cors from 'cors';
 
 const app = express();
 
-app.use(cors({origin: true, credentials: true}));
+app.use(cors());
 app.use(bodyParser.json());
 
 
