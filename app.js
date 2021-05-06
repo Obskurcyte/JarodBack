@@ -12,11 +12,11 @@ app.use(bodyParser.json());
 app.post('/send', (req, res) => {
 
 
-  console.log(req.body)
+
   const output = `
 <p>Vous avez une nouvelle demande par email<p/>
 <h3>Pour répondre au questionnaire, veuillez suivre ce lien : </h3>
-<a href="http://localhost:3000/">Jarod</a>
+<a href="https://jarod.vercel.app/">Jarod</a>
 `
 
   let transporter = nodemailer.createTransport({
@@ -24,8 +24,8 @@ app.post('/send', (req, res) => {
     port: 465,
     secure: true, // use SSL
     auth: {
-      user: 'maxetlea.dev@gmail.com', // generated ethereal user
-      pass: 'Hello13012'
+      user: 'devfrcyber@gmail.com', // generated ethereal user
+      pass: 'Hadrien13&&'
     },
   });
 
